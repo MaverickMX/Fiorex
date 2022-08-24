@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg" style="background-color: #FAECDE;" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/Fiorex 500.png" alt="" width="100" height="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catálogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Rosas</a></li>
+                  <li><a class="dropdown-item" href="#">Gerbera</a></li>
+                  <li><a class="dropdown-item" href="#">Lilis</a></li>
+                  <li><a class="dropdown-item" href="#">Girasoles</a></li>
+                  <li><a class="dropdown-item" href="#">Lisianthus</a></li>
+                  <li><a class="dropdown-item" href="#">Tulipanes</a></li>
+                  <li><a class="dropdown-item" href="#">Nochebuenas</a></li>
+                  <li><a class="dropdown-item" href="#">Papel</a></li>
+                  <li><a class="dropdown-item" href="#">Bases</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container">
+        <div class="row">
+            <div class="mt-5">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            </div>
+        </div>
+
+      </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

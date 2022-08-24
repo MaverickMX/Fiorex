@@ -8,7 +8,7 @@
 
 /* CSS para la pagina de inicio */
 
-.container{
+.contenedor{
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 1fr 1fr;
@@ -87,16 +87,21 @@
 
 @-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
-.container a{
+.contenedor a{
     text-decoration: none;
 }
 
-.container a:hover{
+.contenedor a:hover{
     border: 2px #4f0437 solid;
 }
 
 
 /* CSS para la pagina nosotros */
+.carousel-item{
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
 
 /* Imagen de bienvenida a la pagina de nosotros */
 .slogan{
@@ -405,6 +410,14 @@ background-image: url(../img/pexels-binti-malu-10819601.jpg);
 .item15{
  background-image: url(../img/pexels-jonathan-nenemann-5789540.jpg);   
 }
+/* Configuracion contacto */
+.navbar{
+    font-family: 'Karla', sans-serif;
+}
+.nav-link{
+    color: #81899e;
+}
+
 /* Configuracion para tablet */
 
 @media screen and (max-width: 768px) {
