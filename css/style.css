@@ -421,7 +421,7 @@ background-image: url(../img/pexels-binti-malu-10819601.jpg);
 /* Configuracion para tablet */
 
 @media screen and (max-width: 768px) {
-    .container{
+    .contenedor{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
     }
@@ -456,7 +456,7 @@ background-image: url(../img/pexels-binti-malu-10819601.jpg);
 @media  screen and (max-width: 320px) {
 
     /* Configuracion para la pagina de inicio */
-    .container{
+    .contenedor{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
     }
