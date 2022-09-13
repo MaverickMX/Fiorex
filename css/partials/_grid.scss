@@ -53,11 +53,15 @@
         align-items: center;
         color: $colorAzul;
         font-size: 50px;
+
+        -webkit-animation:flip-in-ver-right .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:flip-in-ver-right .5s cubic-bezier(.25,.46,.45,.94) both;
     }
 
     .nosotrosGrid{
         grid-column: 2/3;
         grid-row: 1/2;
+        
 
         &:hover{
             color: $colorVino;
@@ -67,6 +71,7 @@
     .catalogoGrid{
         grid-column: 3/4;
         grid-row: 1/2;
+        
 
         &:hover{
             color: $colorVino;
@@ -76,6 +81,7 @@
     .galeriaGrid{
         grid-column: 2/3;
         grid-row: 2/3;
+        
 
         &:hover{
             color: $colorVino;
@@ -85,11 +91,20 @@
     .contactoGrid{
         grid-column: 3/4;
         grid-row: 2/3;
+        
+
 
         &:hover{
             color: $colorVino;
         }
     }
+
+    @for $i from 1 to 5 {
+        .cuadro#{$i} {
+            animation-delay: $i * .2s;
+        }
+    }
 }
 
 @-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes flip-in-ver-right{0%{-webkit-transform:rotateY(-80deg);transform:rotateY(-80deg);opacity:0}100%{-webkit-transform:rotateY(0);transform:rotateY(0);opacity:1}}@keyframes flip-in-ver-right{0%{-webkit-transform:rotateY(-80deg);transform:rotateY(-80deg);opacity:0}100%{-webkit-transform:rotateY(0);transform:rotateY(0);opacity:1}}
