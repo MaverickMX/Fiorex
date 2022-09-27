@@ -20,7 +20,7 @@
   .contenedor .logoGrid {
     grid-column: 1/2;
     grid-row: 1/3;
-    background-image: url(../../assets/img/background-rosas.jpg);
+    background-image: url(../assets/img/background-rosas.jpg);
     background-size: cover;
     background-position: center;
     display: flex;

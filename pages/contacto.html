@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiorex | Contacto</title>
+    <link rel="shortcut icon" href="../assets/img/logo-fiorex.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #FAECDE;" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../img/Fiorex 500.png" alt="" width="100" height="100"></a>
+          <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-fiorex.png" alt="Logo Fiorex" width="100" height="100"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,22 +51,46 @@
         </div>
       </nav>
 
-      <section class="container">
-        <div class="row">
-            <div class="mt-5">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-            </div>
+      <form method="post" action="../contacto.php">
+        <label for="nombre">
+          Nombre:
+          <input type="text" id="nombre" required name="nombre">
+        </label>
+        <label for="email">
+          E-mail:
+          <input type="email" id="email" required name="correo">
+        </label>
+        <label for="asunto">
+          Asunto:
+          <input type="text" id="asunto" required name="asunto">
+        </label>
+        <label for="mensaje">
+          Mensaje:
+          <textarea name="texto" id="mensaje" cols="60" rows="10" required></textarea>
+        </label>
+        <select name="pais" id="">
+          <option value="" disabled selected>Selecciona un país</option>
+          <option value="mexico">México</option>
+          <option value="argentina">Argentina</option>
+          <option value="usa">USA</option>
+          <option value="colombia">Colombia</option>
+        </select>
+        <div>
+          <p>Aceptas los terminos y condiciones</p>
+          <label for="si">
+            <input type="radio" name="terminos" id="si" value="si">Sí
+          </label>
+          <label for="no">
+            <input type="radio" name="terminos" id="no" value="no">No
+          </label>
         </div>
-
-      </section>
-
+        
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        
+        
+      </form>
     <script src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
