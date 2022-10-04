@@ -1,50 +1,18 @@
-/* CSS para la pagina nosotros */
-.carousel-item{
-    height: 90vh;
-    background-position: center;
-    background-size: cover;
-}
-
-/* Imagen de bienvenida a la pagina de nosotros */
-.slogan{
-    background-image: url('../Img/ramo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    color: #4f0437;
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-family: 'Crimson Text', Serif;
-    font-weight: 700;
-}
-
-.slogan h2{
-    background-color: #faecdecb;
-    padding-inline: 15px;
-}
-
 /* Configuracion del grid de la pagina nosotros */
 
 .containerNosotros{
 display: grid;
-grid-template-columns: 200px 1fr;
+grid-template-columns: 1fr;
 grid-template-rows: 10vh 1fr 20vh;
 grid-template-areas: 
-'header header'
-'publicidad main'
-'footer footer';
+'header'
+'main'
+'footer';
 }
 .headerNosotros{
     grid-area: header;
     position: sticky;
     top: 0;
-}
-.divNosotros{
-
-    grid-area: publicidad;
 }
 .mainNosotros{
     grid-area: main;
@@ -146,11 +114,7 @@ header{
     font-weight: 700;
 }
 
-/* configuracion CSS banner izquierdo */
 
-.banner img{
-    width: 100%;
-}
 
 /* Configuracion CSS footer */
 
@@ -432,4 +396,18 @@ background-image: url(../img/pexels-binti-malu-10819601.jpg);
     .tall{
         grid-row: span 2;
     }
+}
+
+.containerFluid .barra .lista{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario{
+    font-family: 'Crimson Text';
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    gap: 2rem;
 }

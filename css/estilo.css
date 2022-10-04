@@ -124,3 +124,32 @@
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
     opacity: 1; } }
+
+.carousel .carousel-inner .carousel-item {
+  height: 90vh;
+  background-position: center;
+  background-size: cover; }
+
+.carousel .carousel-inner .fondo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/imagenComprimidaSlider-1.jpg); }
+  .carousel .carousel-inner .fondo1 h3 {
+    font-family: "Crimson Text", serif;
+    background-color: #faecdecb;
+    padding-inline: 10px;
+    color: #4f0437;
+    font-weight: 700; }
+
+.carousel .carousel-inner .fondo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/imagenComprimidaSlider-2.jpg); }
+  .carousel .carousel-inner .fondo2 h3 {
+    font-family: "Crimson Text", serif;
+    background-color: #faecdecb;
+    padding-inline: 10px;
+    color: #4f0437;
+    font-weight: 700; }

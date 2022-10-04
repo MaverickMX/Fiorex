@@ -1,0 +1,44 @@
+.carousel {
+
+    .carousel-inner{
+
+        .carousel-item{
+            height: 90vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+      .fondo1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/img/imagenComprimidaSlider-1.jpg);
+
+            h3{
+                font-family: $fontCrimson;
+                background-color: $colorRosaTransparente;
+                padding-inline: 10px;
+                color: $colorVino;
+                font-weight: 700;
+            }
+                }
+
+        .fondo2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../assets/img/imagenComprimidaSlider-2.jpg);
+
+            h3{
+                font-family: $fontCrimson;
+                background-color: $colorRosaTransparente;
+                padding-inline: 10px;
+                color: $colorVino;
+                font-weight: 700;
+            }
+
+                }
+                
+        
+    }
+}
