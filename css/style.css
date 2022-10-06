@@ -13,6 +13,7 @@ grid-template-areas:
     grid-area: header;
     position: sticky;
     top: 0;
+    
 }
 .mainNosotros{
     grid-area: main;
@@ -210,9 +211,11 @@ footer img{
     grid-auto-flow: dense;
     color: #E3C4BF;
     font-family: 'Crimson Text';
-    font-weight: 700;
+    font-weight: 700 ;
     font-size: 30px;
+    
 }
+
 
 .containerGaleria div:hover{
     transform: scale(1.2) ;
@@ -398,11 +401,12 @@ background-image: url(../img/pexels-binti-malu-10819601.jpg);
     }
 }
 
-.containerFluid .barra .lista{
+.navbar .container-fluid .barra .lista{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    
 }
-
 .formulario{
     font-family: 'Crimson Text';
     display: flex;
@@ -410,4 +414,36 @@ background-image: url(../img/pexels-binti-malu-10819601.jpg);
     padding: 3rem;
     align-items: center;
     gap: 2rem;
+}
+
+.aceptas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    transition: none;
+}
+
+.btn:hover{
+    border: none;
+    color: #81899e;
+}
+
+.dropdown-toggle{
+    color: #81899e;
+    transition: none;
+}
+
+.dropdown-toggle:hover{
+    border: none;
+}
+
+.active{
+    color: #4f0437 !important;
+    border: none;
+}
+
+.tituloGaleria{
+    font-weight: 700 ;
 }

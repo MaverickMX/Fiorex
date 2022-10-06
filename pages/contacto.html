@@ -24,10 +24,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown btn-group">
+                <a class="nav-link btn" href="./catalogo.html" role="button">
                   Catálogo
                 </a>
+                <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Rosas</a></li>
                   <li><a class="dropdown-item" href="#">Gerbera</a></li>
@@ -75,14 +78,17 @@
           <option value="usa">USA</option>
           <option value="colombia">Colombia</option>
         </select>
-        <div>
+        <div class="terminos">
           <p>Aceptas los terminos y condiciones</p>
-          <label for="si">
-            <input type="radio" name="terminos" id="si" value="si">Sí
-          </label>
-          <label for="no">
-            <input type="radio" name="terminos" id="no" value="no">No
-          </label>
+          <div class="aceptas">
+                <label for="si">
+                <input type="radio" name="terminos" id="si" value="si">Sí
+              </label>
+              <label for="no">
+                <input type="radio" name="terminos" id="no" value="no">No
+              </label>
+          </div>
+         
         </div>
         
         
