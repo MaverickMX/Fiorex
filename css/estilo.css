@@ -153,3 +153,123 @@
     padding-inline: 10px;
     color: #4f0437;
     font-weight: 700; }
+
+.containerNosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 1fr 20vh;
+  grid-template-areas: 'header' 'main' 'footer'; }
+  .containerNosotros .headerNosotros {
+    grid-area: header;
+    position: sticky;
+    top: 0; }
+  .containerNosotros .mainNosotros {
+    grid-area: main; }
+    .containerNosotros .mainNosotros #nosotros {
+      padding-top: 10vh; }
+      .containerNosotros .mainNosotros #nosotros h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 50px;
+        text-align: center;
+        font-family: "Crimson Text", serif;
+        color: #E3C4BF;
+        font-weight: 700; }
+      .containerNosotros .mainNosotros #nosotros .produccion {
+        display: flex;
+        margin: 30px;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .containerNosotros .mainNosotros #nosotros .produccion .invernaderoImagen {
+          width: 500px; }
+        .containerNosotros .mainNosotros #nosotros .produccion .textoProduccion {
+          display: flex;
+          flex-direction: column;
+          font-family: "Crimson Text", serif;
+          color: #81899e;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 400;
+          gap: 20px;
+          width: 800px; }
+          .containerNosotros .mainNosotros #nosotros .produccion .textoProduccion h2 {
+            font-family: "Crimson Text", serif;
+            color: #E3C4BF;
+            font-style: italic;
+            font-size: 35px;
+            font-weight: 700; }
+      .containerNosotros .mainNosotros #nosotros .comercializacion {
+        display: flex;
+        margin: 30px;
+        gap: 30px;
+        flex-flow: row-reverse wrap;
+        justify-content: center; }
+        .containerNosotros .mainNosotros #nosotros .comercializacion .textoComercializacion {
+          display: flex;
+          flex-direction: column;
+          font-family: "Crimson Text", serif;
+          color: #81899e;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 400;
+          gap: 20px;
+          width: 800px; }
+          .containerNosotros .mainNosotros #nosotros .comercializacion .textoComercializacion h2 {
+            font-family: "Crimson Text", serif;
+            color: #E3C4BF;
+            font-style: italic;
+            font-size: 35px;
+            font-weight: 700; }
+  .containerNosotros footer {
+    background-color: #FAECDE;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #81899e;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    padding-top: 30px;
+    gap: 30px;
+    padding-bottom: 30px; }
+    .containerNosotros footer img {
+      width: 30px;
+      height: 30px; }
+    .containerNosotros footer .footerNosotros {
+      grid-area: footer; }
+      .containerNosotros footer .footerNosotros .datosContacto {
+        flex-wrap: wrap;
+        height: 100%;
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column; }
+        .containerNosotros footer .footerNosotros .datosContacto h6 {
+          font-size: 20px; }
+        .containerNosotros footer .footerNosotros .datosContacto .bloqueWhatsapp, .containerNosotros footer .footerNosotros .datosContacto .bloqueGmail {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          flex-wrap: wrap;
+          justify-content: center; }
+      .containerNosotros footer .footerNosotros .horario {
+        flex-wrap: wrap;
+        height: 100%;
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column; }
+        .containerNosotros footer .footerNosotros .horario h6 {
+          font-size: 20px; }
+        .containerNosotros footer .footerNosotros .horario .bloqueHorario {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          flex-wrap: wrap;
+          justify-content: center; }
+          .containerNosotros footer .footerNosotros .horario .bloqueHorario .textoHorario {
+            display: flex;
+            flex-direction: column; }
