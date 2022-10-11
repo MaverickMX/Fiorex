@@ -1,0 +1,113 @@
+.catalogoPrincipal{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: $colorRosaFuerte;
+    font-family: $fontCrimson;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+
+    p{
+        border: double 3px $colorAmarillo;
+    }
+
+    > div{
+        transition: all 1s;
+
+        &:hover{
+
+            transform: translateY(-50px);
+            p{border: double 3px #4f0437;}
+
+        }
+
+    }
+
+
+    img{
+    height: 400px;
+    width: 300px;
+    }
+
+}
+
+footer{
+    background-color:$colorRosa;
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $colorAzul;
+    font-family: $fontKarla;
+    font-size: 20px;
+    padding-top: 30px;
+    gap: 30px;
+    padding-bottom: 30px;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+        .datosContacto{
+
+            flex-wrap: wrap;
+            height: 100%;
+            width: 400px;
+            display: flex;
+            justify-content:space-evenly;
+            text-align: center;
+            flex-direction: column;
+
+            h6{
+                font-size: 20px;
+            }
+            
+
+            .bloqueWhatsapp, .bloqueGmail{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+        }
+
+        .horario{
+
+            flex-wrap: wrap;
+            height: 100%;
+            width: 400px;
+            display: flex;
+            justify-content:space-evenly;
+            text-align: center;
+            flex-direction: column;
+
+            h6{
+                font-size: 20px;
+            }
+            
+            .bloqueHorario{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .textoHorario{
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+            }
+        }
+        
+    
+
+
+    }

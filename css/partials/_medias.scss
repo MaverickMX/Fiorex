@@ -1,0 +1,113 @@
+/* Configuracion para tablet */
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .logoGrid{
+        grid-column: 1/-1;
+        grid-row: 1/3;
+    }
+
+    .logoGrid h1{
+        font-size: 20px;
+    }
+    .nosotrosGrid{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .catalogoGrid{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .galeriaGrid{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .contactoGrid{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
+
+/* Configuracion para Celular */
+
+@media  screen and (max-width: 320px) {
+
+    /* Configuracion para la pagina de inicio */
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .logoGrid{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        
+    }
+    .logoGrid h1{
+        background-color: #faecdecb;
+        font-size: 20px;
+        padding-inline: 15px;
+    }
+    .nosotrosGrid{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .catalogoGrid{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .galeriaGrid{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .contactoGrid{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    /* Configuracion para la pagina de nosotros */
+
+    .slogan{
+        height: 30vh;
+        font-size: 20px;
+    }
+    .containerNosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 1fr 2fr;
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
+    .logo{
+        display: none;
+    }
+    .listaMenu{
+        flex-direction: column;
+    }
+    .invernaderoImagen{
+        width: 300px;
+    }
+    .textoComercializacion, .textoProduccion{
+        width: 320px;
+    }
+    .comercializacion iframe{
+        width: 320px;
+    }
+    .horario, .datosContacto{
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .wide{
+        grid-column: span 2;
+    }
+    
+    .tall{
+        grid-row: span 2;
+    }
+}

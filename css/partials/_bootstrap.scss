@@ -1,0 +1,39 @@
+.navbar{
+    font-family: $fontKarla;
+
+    .container-fluid{
+        .barra{
+            .lista{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.nav-link{
+    color: $colorAzul;
+}
+
+.btn{
+    transition: none;
+
+    &:hover{
+        border: none;
+        color: $colorAzul;
+    }
+}
+
+.dropdown-toggle{
+    color: $colorAzul;
+    transition: none;
+    &:hover{
+        border: none;
+    }
+}
+
+.active{
+    color: $colorVino !important;
+    border: none;
+}

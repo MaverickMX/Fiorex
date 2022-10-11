@@ -1,0 +1,15 @@
+.formulario{
+    font-family: 'Crimson Text';
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    gap: 2rem;
+
+    .terminos{
+        .aceptas{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
