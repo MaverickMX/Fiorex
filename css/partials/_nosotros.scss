@@ -53,15 +53,50 @@
     'main'
     'footer';
 
+    @include mobile{
+         grid-template-columns: 1fr;
+        grid-template-rows: 50vh 1fr 2fr;
+        grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    }
     .headerNosotros{
         grid-area: header;
         position: sticky;
         top: 0;
+
+        @include tablet{
+            padding: 0;
+        }
+
+        .container-fluid{
+
+            @include tablet{
+                height: 100%;
+            }
+            .navbar-brand{
+
+               @include tablet{
+                height: 100%;
+               }
+                 
+                img{
+                    @include tablet{
+                        height: 100%;
+                        width: 71px;
+                    }
+                }
+               
+
+            }
+        }
         
     }
 
     .mainNosotros{
         grid-area: main;
+        padding: 0 1rem 1rem 1rem;
 
       
 
@@ -82,11 +117,20 @@
                 display: flex;
                 margin: 30px;
                 gap: 30px;
-                flex-wrap: wrap;
                 justify-content: center;
 
-                .invernaderoImagen{
-                    width: 500px;
+                @include tablet{
+                    flex-direction: column;
+                }
+
+                .imagenProduccion{
+                    .invernaderoImagen{
+                        width: 100%;
+                    }
+                }
+
+                > div{
+                    width: 100%;
                 }
 
                 .textoProduccion{
@@ -98,7 +142,7 @@
                     font-size: 20px;
                     font-weight: 400;
                     gap: 20px;
-                    width: 800px;
+                   
 
                     h2{
                         font-family: $fontCrimson;
@@ -114,8 +158,16 @@
                 display: flex;
                 margin: 30px;
                 gap: 30px;
-                flex-flow: row-reverse wrap;
                 justify-content: center;
+                flex-direction: row-reverse;
+
+                @include tablet{
+                    flex-direction: column;
+                }
+
+                > *{
+                    width: 100%;
+                }
 
                 .textoComercializacion{
                     display: flex;
@@ -126,7 +178,6 @@
                     font-size: 20px;
                     font-weight: 400;
                     gap: 20px;
-                    width: 800px;
 
                     h2{
                         font-family: $fontCrimson;
@@ -141,37 +192,46 @@
 
         }
     }
+    
+    }
 
-    footer{
+    .footerNosotros{
         background-color:$colorRosa;
         display: flex;
-        flex-flow:row wrap;
         align-items: center;
         justify-content: space-evenly;
         color: $colorAzul;
         font-family: $fontKarla;
         font-size: 20px;
-        padding-top: 30px;
+        padding-block: 2rem;
         gap: 30px;
-        padding-bottom: 30px;
+        grid-area: footer;
+        
+        @include tablet{
+            flex-direction: column;
+        }
+
 
         img{
             width: 30px;
             height: 30px;
         }
-
-        .footerNosotros{
-            grid-area: footer;
+        
+            
 
             .datosContacto{
 
-                flex-wrap: wrap;
+                /* flex-wrap: wrap; */
                 height: 100%;
-                width: 400px;
+                width: 100%;
                 display: flex;
                 justify-content:space-evenly;
                 text-align: center;
                 flex-direction: column;
+
+                @include tablet{
+                    flex-direction: row;
+                }
 
                 h6{
                     font-size: 20px;
@@ -189,13 +249,17 @@
 
             .horario{
 
-                flex-wrap: wrap;
+                /* flex-wrap: wrap; */
                 height: 100%;
-                width: 400px;
+                width: 100%;
                 display: flex;
                 justify-content:space-evenly;
                 text-align: center;
                 flex-direction: column;
+
+                @include tablet{
+                    flex-direction: row;
+                }
 
                 h6{
                     font-size: 20px;
@@ -216,11 +280,8 @@
                 }
             }
             
-        }
+        
 
 
     }
     
-    
-
-    }
